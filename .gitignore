@@ -1,0 +1,27 @@
+# Unity generated folders
+RTT_Unity/[Ll]ibrary/
+RTT_Unity/[Tt]emp/
+RTT_Unity/[Oo]bj/
+RTT_Unity/[Bb]uild/
+RTT_Unity/[Bb]uilds/
+RTT_Unity/[Ll]ogs/
+RTT_Unity/[Uu]ser[Ss]ettings/
+RTT_Unity/[Mm]emoryCaptures/
+RTT_Unity/[Rr]ecordings/
+
+# Unity IDE generated files
+RTT_Unity/.vs/
+RTT_Unity/.idea/
+RTT_Unity/.vscode/
+RTT_Unity/*.csproj
+RTT_Unity/*.sln
+RTT_Unity/*.slnx
+RTT_Unity/*.user
+
+# Arduino editor files
+.theia/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
