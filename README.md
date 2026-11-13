@@ -22,7 +22,7 @@ Picture of the frame
 
 #### List of Components:
 
-- Arduino R4 Wifi
+- Arduino UNO R4 Wifi
 - Buck Converter (8-40V input, 12V 6A output)
 - Bus Servo Adapter
 - Li-Po Battery (3300mAh, 50C, 14.8V)
@@ -31,6 +31,14 @@ Picture of the frame
 - UBEC (8A, 15A peak)
 - 20kg Digital Servo x6
 - XT60 Switch
+
+#### Power System Overview
+
+The main power supply is a 14.8V Li-Po battery. The 14.8V line runs directly through a heavy duty XT60 switch to allow for easy toggling of the power system. It is then split creating to sides, a lower voltage 6V side and a higher voltage 12V side. This is to correctly power the different components with the needed voltages. For example, the digital servos require 6V to run while the serial bus servos require 12V.
+
+12V Side: A buck converter is used to step down the voltage from 14.8V to 12V. Then the output is split to power the bus servo adapter and the Arduino UNO R4 Wifi.
+6V Side: A UBEC is used to lower the voltage from 14.8V to 6V. The 6V is then wired to the screw terminal of the servo driver board and is used to power the servos.
+5V line: The Arduino has internal components that lower the input voltage from 12V to 5V. The 5V output from the arduino is connected to the servo driver to power the boards logic.
 
 #### System Block Diagram
 
