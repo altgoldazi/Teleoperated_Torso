@@ -4,6 +4,16 @@
 
 Robotic torso controlled wirelessly via a vr headset
 
+### Table Of Contents
+* [Problem Statement / Goal](#Problem-Statement-/-Goal)
+* [Design Overview](#Design-Overview)
+* [Frame](#Frame)
+* [Electronics](#Electronics)
+  * [List of Components](#List-of-Components)
+  * [Power System Overview](#Power-System-Overview)
+  * [Power System Block Diagram](#Power-System-Block-Diagram)
+* [Software](#Software)
+
 ### Problem Statement / Goal
 
 My inspiration for this project comes from space. Astronauts aboard the ISS need to do spacewalks to complete required maintenance and updates to the station. There are however a couple problems with space walks, they are very physically demanding, take a long time, and increase the astronauts exposure to radiation. This goal of this project is to make a robot that can complete the space walk while being controlled by an astronaut inside the station, or from ground control. 
@@ -12,13 +22,13 @@ My inspiration for this project comes from space. Astronauts aboard the ISS need
 
 The design of this robotic teleoperated torso (RTT) consists of two arms and a head. The robot is controlled using a stand alone vr headset and is designed to mimic the movements of the person using the headset. For example, if the user extends their right arm out in front of themselves, the robot should, with minimal latency, also extend its right arm out in front of itself.
 
-### Frame
+## Frame
 
 The frame for the robot was designed entirely in Onshape and 3D printed using PLA. There are 6 parts: The Body, Camera Mount, Left Bicep, Right Bicep, Left Forearm, and Right Forearm. The proportions for the design match my personal proportions scaled by a factor of 0.4. Picture of the frame are shown below
 
 Picture of the frame
 
-### Electronics
+## Electronics
 
 #### List of Components:
 
@@ -40,7 +50,10 @@ The main power supply is a 14.8V Li-Po battery. The 14.8V line runs directly thr
 6V Side: A UBEC is used to lower the voltage from 14.8V to 6V. The 6V is then wired to the screw terminal of the servo driver board and is used to power the servos.\
 5V line: The Arduino has internal components that lower the input voltage from 12V to 5V. The 5V output from the arduino is connected to the servo driver to power the boards logic.
 
-#### System Block Diagram
+#### Power System Block Diagram
 
-<img width="859" height="649" alt="image" src="https://github.com/user-attachments/assets/fc58b372-1e4a-4b43-8841-bbb85a933bf3" />
+<img width="850" height="517" alt="image" src="https://github.com/user-attachments/assets/ae96e4f4-f1a4-4ccd-a7af-852fc6ed5d20" />
+
+## Software
+
 
