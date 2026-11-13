@@ -34,4 +34,5 @@ Picture of the frame
 
 #### System Block Diagram
 
-<img width="793" height="463" alt="PowerMapRTT drawio" src="https://github.com/user-attachments/assets/b3517c0d-730b-436d-a28d-b4f5ddee1a53" />
+<img width="859" height="649" alt="image" src="https://github.com/user-attachments/assets/fc58b372-1e4a-4b43-8841-bbb85a933bf3" />
+
