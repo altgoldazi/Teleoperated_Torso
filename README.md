@@ -72,7 +72,7 @@ The microcontroller running the RTT is an Arduino R4 WIFI. The Arduino connects 
 #### Logic System Block Diagram
 -------------------------------
 
-<img width="436" height="382" alt="image" src="https://github.com/user-attachments/assets/869cf0a7-0051-4034-8905-3f98d434605f" />
+<img width="433" height="382" alt="image" src="https://github.com/user-attachments/assets/f78a4a5b-297b-4b95-be4c-cf83099d065e" />
 
 #### Electronics Photos
 ----------------------
