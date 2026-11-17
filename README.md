@@ -15,7 +15,7 @@ Robotic torso controlled wirelessly via a vr headset
   * [Power System Overview](#Power-System-Overview)
   * [Power System Block Diagram](#Power-System-Block-Diagram)
   * [Logic System Overview](#Logic-System-Overview)
-  * [Logic System Block Diagram](#Logic-System-Diagram)
+  * [Logic System Block Diagram](#Logic-System-Block-Diagram)
   * [Electronics Photos](#Electronics-Photos)
 * [Software](#Software)
 
