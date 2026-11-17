@@ -61,6 +61,21 @@ The main power supply is a 14.8V Li-Po battery. The 14.8V line runs directly thr
 
 <img width="850" height="517" alt="image" src="https://github.com/user-attachments/assets/ae96e4f4-f1a4-4ccd-a7af-852fc6ed5d20" />
 
+#### Logic System Overview
+--------------------------
+
+The microcontroller running the RTT is an Arduino R4 Wifi. The Arduino connects to unity over wifi. Unity gives the Arduino the already calculated angles joint angles. Then the Arduino converts those joint angles into signals (PWM for the digital servos and Serial Commands for the Serial Bus Servos) and sends those signals to the correct driver to move the servos.
+
+#### Logic System BLock Diagram
+-------------------------------
+
+<img width="436" height="382" alt="image" src="https://github.com/user-attachments/assets/869cf0a7-0051-4034-8905-3f98d434605f" />
+
+#### Electronics Photos
+----------------------
+
+photos
+
 ## Software
 
 
