@@ -14,6 +14,9 @@ Robotic torso controlled wirelessly via a vr headset
   * [List of Components](#List-of-Components)
   * [Power System Overview](#Power-System-Overview)
   * [Power System Block Diagram](#Power-System-Block-Diagram)
+  * [Logic System Overview](#Logic-System-Overview)
+  * [Logic System Block Diagram](#Logic-System-Diagram)
+  * [Electronics Photos](#Electronics-Photos)
 * [Software](#Software)
 
 ### Problem Statement / Goal
@@ -28,7 +31,7 @@ The design of this robotic teleoperated torso (RTT) consists of two arms and a h
 
 ## Frame
 
-The frame for the robot was designed entirely in Onshape and 3D printed using PLA. There are 6 parts: The Body, Camera Mount, Left Bicep, Right Bicep, Left Forearm, and Right Forearm. The proportions for the design match my personal proportions scaled by a factor of 0.4. Picture of the frame are shown below
+The frame for the robot was designed entirely in Onshape and 3D printed using PLA. There are 6 parts: The Body, Camera Mount, Left Bicep, Right Bicep, Left Forearm, and Right Forearm. The proportions for the design match my personal proportions scaled by a factor of 0.4. Picture of the frame are shown below.
 
 Picture of the frame
 
@@ -64,7 +67,7 @@ The main power supply is a 14.8V Li-Po battery. The 14.8V line runs directly thr
 #### Logic System Overview
 --------------------------
 
-The microcontroller running the RTT is an Arduino R4 Wifi. The Arduino connects to unity over wifi. Unity gives the Arduino the already calculated angles joint angles. Then the Arduino converts those joint angles into signals (PWM for the digital servos and Serial Commands for the Serial Bus Servos) and sends those signals to the correct driver to move the servos.
+The microcontroller running the RTT is an Arduino R4 WIFI. The Arduino connects to unity over WIFI. Unity gives the Arduino the already calculated angles joint angles. Then the Arduino converts those joint angles into signals (PWM for the digital servos and Serial Commands for the Serial Bus Servos) and sends those signals to the correct driver to move the servos. The PCA9685 Servo Driver connects to the arduino using an I2C line, and the Bus Servo Adapter connects to the Arduino using a UART line.
 
 #### Logic System BLock Diagram
 -------------------------------
